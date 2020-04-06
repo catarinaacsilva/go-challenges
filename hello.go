@@ -48,12 +48,11 @@ func needFloat(x float64) float64 {
 	return x * 0.1
 }
 
-func firstFor(x, y int) bool{
-	if x >= 1 && y <= 5{
+func firstFor() bool{
+	for true{
 		return true
-	} else{
-		return false
-	}
+	} 
+	return false
 }
 
 func testIf(){
@@ -106,7 +105,7 @@ func main() {
 	fmt.Println(needFloat(Small))
 	fmt.Println(needFloat(Big))
 
-	if firstFor(1, 5)==true{
+	if firstFor()==true{
 		fmt.Println("true")
 	}
 
