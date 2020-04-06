@@ -48,6 +48,24 @@ func needFloat(x float64) float64 {
 	return x * 0.1
 }
 
+func firstFor(x, y int) bool{
+	if x >= 1 && y <= 5{
+		return true
+	} else{
+		return false
+	}
+}
+
+func testIf(){
+	if num := 9; num < 0 {
+        fmt.Println(num, "is negative")
+    } else if num < 10 {
+        fmt.Println(num, "has 1 digit")
+    } else {
+        fmt.Println(num, "has multiple digits")
+    }
+}
+
 func main() {
 	fmt.Printf("hello, world\n")
 
@@ -87,4 +105,10 @@ func main() {
 	fmt.Println(needInt(Small))
 	fmt.Println(needFloat(Small))
 	fmt.Println(needFloat(Big))
+
+	if firstFor(1, 5)==true{
+		fmt.Println("true")
+	}
+
+	testIf()
 }
