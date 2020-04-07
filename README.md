@@ -1,7 +1,11 @@
 # Go Utils
 
 1. Multiples of 3 and 5
+2. Fibonacci
+3. Prime factors
 
+
+** Based on**: [Project Euler](https://projecteuler.net/archives)
 ## Requirements
 
 - Linux 20.04
