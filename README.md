@@ -3,7 +3,8 @@
 1. Multiples of 3 and 5
 2. Fibonacci
 3. Prime factors
-4. Palindrome Largest
+4. Palindrome largest
+5. Smallest multiple
 
 
 **Based on**: [Project Euler](https://projecteuler.net/archives)
@@ -31,7 +32,9 @@
 
 3. **Prime factors**: What is the largest prime factor of the number 600851475143 ?
 
-4. **Palindrome Largest**: Find the largest palindrome made from the product of two 3-digit numbers.
+4. **Palindrome largest**: Find the largest palindrome made from the product of two 3-digit numbers.
+
+5. **Smallest multiple**: What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 
 ## Authors
 
