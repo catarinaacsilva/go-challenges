@@ -1,3 +1,13 @@
+/*
+* Palindrome Largest
+*
+* Author: Catarina Silva
+* Email: c.alexandracorreia@av.it.pt
+* Email: c.alexandracorreia@ua.pt
+* 
+* Version: 1.0
+*/
+
 package main
 
 // import "fmt"
