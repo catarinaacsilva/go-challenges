@@ -1,5 +1,5 @@
 /*
-* Palindrome Largest
+* Multiple of 3 and 5
 *
 * Author: Catarina Silva
 * Email: c.alexandracorreia@av.it.pt

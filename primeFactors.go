@@ -1,5 +1,5 @@
 /*
-* Palindrome Largest
+* Prime Factors
 *
 * Author: Catarina Silva
 * Email: c.alexandracorreia@av.it.pt

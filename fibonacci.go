@@ -1,5 +1,5 @@
 /*
-* Palindrome Largest
+* Fibonacci
 *
 * Author: Catarina Silva
 * Email: c.alexandracorreia@av.it.pt

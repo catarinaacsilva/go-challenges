@@ -1,5 +1,5 @@
 /*
-* Palindrome Largest
+* Hello World
 *
 * Author: Catarina Silva
 * Email: c.alexandracorreia@av.it.pt
