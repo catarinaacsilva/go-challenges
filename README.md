@@ -5,7 +5,8 @@
 3. Prime factors
 
 
-** Based on**: [Project Euler](https://projecteuler.net/archives)
+**Based on**: [Project Euler](https://projecteuler.net/archives)
+
 ## Requirements
 
 - Linux 20.04
