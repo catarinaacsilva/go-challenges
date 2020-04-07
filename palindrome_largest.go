@@ -21,20 +21,23 @@ func palindrome_largest(a, b int)int{
 	var p, result int = 0,0
 
 	for a<1000{
+
 		for b<1000{
-			if palindrome(result) == true{
+			result = a * b
+			
+			if palindrome(result) == true && result > p{
 				p = result
 			}
-			result = a*b
 			b++
 		}
 		a++	
+		b = 1
 	}
 	return p
 }
 
 func main(){
-	var palindrom_largest = palindrome_largest(101, 101)
+	var palindrom_largest = palindrome_largest(100, 100)
 	fmt.Println(palindrom_largest)
 }
  
