@@ -1,4 +1,4 @@
-# Go Utils
+# Go Challenges - Beggin
 
 **Features of Go Programming:**
 
