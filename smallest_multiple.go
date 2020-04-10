@@ -27,7 +27,6 @@ func multiple(value int) int{
 	return result
 }
 
-// TODO: problem with n
 func smallest_multiple() int{
 	var value, result_mult int = 1, 0
 
