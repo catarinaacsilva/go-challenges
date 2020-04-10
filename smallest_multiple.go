@@ -14,21 +14,31 @@ import(
 	"fmt"
 )
 
+func multiple(value int) int{
+	var result int = 0
+
+	for i:=1; i<=10; i++{
+		if value%i >= 0{
+			result = value
+		} else{
+			break
+		}
+	}
+	return result
+}
+
 // TODO: problem with n
 func smallest_multiple() int{
-	var div, result, n int = 1,0,1
+	var value, result_mult int = 1, 0
 
-	result = n%div
-
-	
-	for n%div == 0 && div >= 1 && div <= 10 {
-		if n%div < result{
-			result = n%div
-		}
-		div ++
+	for multiple(value) != 0{
+		result_mult = multiple(value)
+		value++
 	}
+
+	return result_mult
 	
-	return result
+
 }
 
 
