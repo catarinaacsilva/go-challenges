@@ -12,7 +12,7 @@ package main
 
 import(
 	"fmt"
-	"math"
+	//"math"
 )
 
 // first version
@@ -33,34 +33,32 @@ func smallest_multiple_v1() int{
 
 // Second version
 
-func smallest_multiple_v2() int{
-	var k, n, i, limit int = 20, 1, 1, 0
-	var check bool = true
-	var size_p, size_a int // necessário inicializar
-	var p = make([]int,size_p)
-	var a = make([]int,size_a)
-	
-	limit = int(math.Sqrt(float64(k)))
-	
-	for p[i] <= k{
-		a[i] = 1
-		if check{
-			if p[i] <= limit{
-				a[i] = int(math.Floor(math.Log(float64(k))/math.Log(float64(p[i]))))	
-			}else{
-				check = false
-			}
-		}
+func aux_smallest_multiple_v2(a,b int) int{
+	var i, sm int = 1, a*b
 		
-		n = n * int(math.Pow(float64(p[i]), float64(a[i])))
-		i++
-	}
 	
-	return n
+	for true{
+		sm = a * i
+		i++
+		if sm%b == 0{
+			break
+		}
+	}
+    
+    return sm;
 }
 
+func smallest_multiple_v2() int{
+	var sm int = 2
+	for i:=1; i<=20; i++{
+		sm = aux_smallest_multiple_v2(i, sm)
+	}
+	return sm
+}
 
 func main(){
-	//fmt.Println(smallest_multiple_v1())
+	fmt.Println("Result with first approach:")
+	fmt.Println(smallest_multiple_v1())
+	fmt.Println("Result with second approach:")
 	fmt.Println(smallest_multiple_v2())
 }
