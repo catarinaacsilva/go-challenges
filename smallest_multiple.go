@@ -14,29 +14,18 @@ import(
 	"fmt"
 )
 
-func multiple(value int) int{
-	var result int = 0
+func smallest_multiple() int{
+	var cond bool = false
+	var i int = 0
 
-	for i:=1; i<=10; i++{
-		if value%i >= 0{
-			result = value
-		} else{
-			break
+	for cond == false{
+		i++
+		if i%2 == 0{
+			cond = true
 		}
 	}
-	return result
-}
 
-func smallest_multiple() int{
-	var value, result_mult int = 1, 0
-
-	for multiple(value) != 0{
-		result_mult = multiple(value)
-		value++
-	}
-
-	return result_mult
-	
+	return i
 
 }
 
