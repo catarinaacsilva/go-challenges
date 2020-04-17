@@ -12,9 +12,11 @@ package main
 
 import(
 	"fmt"
+	"math"
 )
 
-func smallest_multiple() int{
+// first version
+func smallest_multiple_v1() int{
 	var cond bool = false
 	var i int = 0
 
@@ -29,7 +31,36 @@ func smallest_multiple() int{
 
 }
 
+// Second version
+
+func smallest_multiple_v2() int{
+	var k, n, i, limit int = 20, 1, 1, 0
+	var check bool = true
+	var size_p, size_a int // necessário inicializar
+	var p = make([]int,size_p)
+	var a = make([]int,size_a)
+	
+	limit = int(math.Sqrt(float64(k)))
+	
+	for p[i] <= k{
+		a[i] = 1
+		if check{
+			if p[i] <= limit{
+				a[i] = int(math.Floor(math.Log(float64(k))/math.Log(float64(p[i]))))	
+			}else{
+				check = false
+			}
+		}
+		
+		n = n * int(math.Pow(float64(p[i]), float64(a[i])))
+		i++
+	}
+	
+	return n
+}
+
 
 func main(){
-	fmt.Println(smallest_multiple())
+	//fmt.Println(smallest_multiple_v1())
+	fmt.Println(smallest_multiple_v2())
 }
